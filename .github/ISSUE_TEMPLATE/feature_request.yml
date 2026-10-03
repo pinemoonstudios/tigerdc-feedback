@@ -1,0 +1,19 @@
+name: Feature request / Предложение
+description: Suggest an improvement / Предложить улучшение
+labels: [enhancement, needs-triage]
+body:
+  - type: markdown
+    attributes:
+      value: English and Russian are welcome. / Можно писать по-русски или по-английски.
+  - type: textarea
+    id: need
+    attributes:
+      label: What do you want to do? / Какую задачу хотите решить?
+      description: Describe the situation where this would help. / Когда это было бы полезно?
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Your suggestion / Ваше предложение
+      description: Optional. / Необязательно.

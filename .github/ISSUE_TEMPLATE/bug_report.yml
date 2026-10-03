@@ -1,0 +1,43 @@
+name: Bug report / Ошибка
+description: Report a problem in TigerDC++ / Сообщить о проблеме
+labels: [bug, needs-triage]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        English or Russian is fine. Reports are public: do not include keys, passwords, private chats or file lists.
+        Можно писать по-русски. Для вопросов покупки и лицензии: pinemoonstudios@gmail.com.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened? / Что произошло?
+      description: What did you expect instead? / Какой результат вы ожидали?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: How to reproduce / Как повторить
+      description: List the actions before the problem. If it happened once, say so.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: TigerDC++ version / Версия приложения
+      placeholder: 0.25 (25)
+  - type: input
+    id: os
+    attributes:
+      label: macOS version / Версия macOS
+      placeholder: 26.0.1
+  - type: input
+    id: architecture
+    attributes:
+      label: Processor / Процессор
+      placeholder: Apple Silicon
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or extra details / Скриншоты или подробности
+      description: Optional. Remove private details before attaching. / Необязательно. Скройте личные данные.
